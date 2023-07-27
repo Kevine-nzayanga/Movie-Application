@@ -4,6 +4,7 @@ import './style.css'
 const IMAGE_BASE_URL= process.env.REACT_APP_IMAGE_BASE_URL;
 
 const ImageContainer = ({props}) =>{
+  
     return(
             <div key={props.id} className = "image_container" >
               <img

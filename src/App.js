@@ -15,7 +15,7 @@ function App() {
 <Carousels/>
 <Routes>
   <Route path='/all' element = {<MovieList/>} exact/>
-   <Route path='moviedetails' element = {<MovieDetails/>} exact/> 
+   {/* <Route path='moviedetails' element = {<MovieDetails/>} exact/>  */}
   <Route path='/' element = {<MovieList/>} exact/>
 </Routes>
 </BrowserRouter>

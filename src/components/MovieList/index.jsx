@@ -57,12 +57,12 @@ const handleSearchFunction = async (searchValue) => {
         const result = await response.json();
         setMovies(result.results);
         setError(null);
-      } catch (error) {
+      } 
+      catch (error) {
         console.error("Error fetching movies:", error.message);
         setError("Failed to fetch movies.");
       }
     }
-    // Set searchPerformed to true after the search
     setSearchPerformed(true);
   };
 
@@ -79,11 +79,10 @@ if(loading){
             </div>
 
             {error && <p>{error}</p>}
-      <div className="image_container">
-        {searchPerformed && movies.length === 0 ? (
-          <p>No search results found</p>
+          <div className="image_container">
+           {searchPerformed && movies.length === 0 ? (
+          <p>No results found</p>
         ) : (
-
             movies&& 
                 loading===false && 
                 movies.length>0 && 
