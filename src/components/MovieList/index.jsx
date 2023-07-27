@@ -2,6 +2,7 @@ import React, {useEffect,useState} from "react";
 import { getMovies } from "../../utils/utilities";
 import ImageContainer from "../../atoms/Image-container";
 import './style.css';
+
 import Navbar from "../Navbar";
 import { Link } from "react-router-dom";
 

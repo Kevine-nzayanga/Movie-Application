@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MovieList from './components/MovieList';
 import  Carousels from './components/Slider';
 import Navbar from './components/Navbar';
+import MovieDetailsPage from './components/Details';
 
 
 function App() {
@@ -15,8 +16,7 @@ function App() {
 <Carousels/>
 <Routes>
   <Route path='/all' element = {<MovieList/>} exact/>
-   {/* <Route path='moviedetails' element = {<MovieDetails/>} exact/>  */}
-  <Route path='/' element = {<MovieList/>} exact/>
+  <Route path='/moviedetails' element = {<MovieDetailsPage/>} exact/>
 </Routes>
 </BrowserRouter>
 
