@@ -58,25 +58,3 @@ export default Carousels;
 
    
 
-{/* <div className="caros">
-{images.length ? (
-  <Carousel autoPlay interval="5000" transitionTime="5000" infiniteLoop={false} >
-    {images.map((image, index) => (
-      <div key={index} className="resize">
-        <img
-          src={`${IMAGE_BASE_URL}${image.poster_path}`}
-          alt={image.title}
-        />
-        <CarouselCaption>
-        <p>{image.release_date}</p>
-        <p className="title">{image.title}</p>
-        <p>{image.overview}</p>
-        </CarouselCaption>
-      
-      </div>
-    ))}
-  </Carousel>
-) : (
-  <div>No images found</div>
-)}
-</div> */}

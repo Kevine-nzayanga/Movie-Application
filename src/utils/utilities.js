@@ -38,18 +38,38 @@ export const getUpcoming = async() =>{
 }
 
 
-export const getGenre = async() =>{
-try{
-    const response = await fetch(`${BASE_URL}/3/genre/${type}/list`,{
-        method:'GET',
-        headers:{
-            Authorization:`Bearer ${ACCESS_TOKEN}`
-        }  
-    })
-    const result = await response.json();
-    return result;
+// export const getGenre = async() =>{
+// try{
+//     const response = await fetch(`${BASE_URL}/3/genre/${type}/list`,{
+//         method:'GET',
+//         headers:{
+//             Authorization:`Bearer ${ACCESS_TOKEN}`
+//         }  
+//     })
+//     const result = await response.json();
+//     return result;
+// }
+// catch(error){
+//     return error.message
+// }
+// }
+
+export const getMovieDetails = async (id) => {
+    try{
+        const response = await fetch(`${BASE_URL}/3/movie/${id}`, {
+            method : 'GET',
+            headers : {
+                Authorization: `Bearer ${ACCESS_TOKEN}`
+            }
+        })
+    
+        const result = await response.json();
+        return result;
+    }
+
+    catch (error) {
+      return error.message;
+    }
 }
-catch(error){
-    return error.message
-}
-}
+
+

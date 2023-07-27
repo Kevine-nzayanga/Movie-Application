@@ -22,17 +22,20 @@
     color: rgb(255, 174, 0);
 }
 .search {
-    width: 200px;
-    margin-right: 500px;
+    width: 500px;
+    margin-right: 300px;
   }
 .search >input {
     border: 1px solid #fff;
     outline: 0;
     background-color: transparent;
-    font-size: 16px;
+    font-size: 13px;
     color: #fff;
-    padding: 5px 500px 5px 25px;
+    padding: 5px 150px 5px 25px;
     border-radius: 10px;
+}
+.bar{
+  width: 100px;
 }
 .links {
     display: flex;

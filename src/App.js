@@ -4,16 +4,24 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MovieList from './components/MovieList';
 import  Carousels from './components/Slider';
 import Navbar from './components/Navbar';
-import Genres from './components/Genreslider';
+import MovieDetails from './components/Moviedetails';
 
 
 function App() {
   return (
     <div className='main'>
-      <Navbar/>
-      <Carousels/>
-      <Genres/>
-      <MovieList/>
+ <BrowserRouter>
+<Navbar/>
+{/* <Genres/> */}
+<Carousels/>
+<Routes>
+  <Route path='/all' element = {<MovieList/>} exact/>
+   <Route path='moviedetails' element = {<MovieDetails/>} exact/> 
+  <Route path='/' element = {<MovieList/>} exact/>
+</Routes>
+</BrowserRouter>
+
+  
     </div>
   );
 }
@@ -21,15 +29,3 @@ function App() {
 export default App;
 
 
-
-
-// <BrowserRouter>
-// <Navbar/>
-// <Genres/>
-// <Routes>
-//   <Route path='/all' element = {<MovieList/>} exact>
-//   {/* <Route path='/' element = {<MovieList/>} exact> */}
-//   {/* <Route path='/' element = {<MovieList/>} exact> */}
-//   </Route>
-// </Routes>
-// </BrowserRouter>
