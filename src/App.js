@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MovieList from './components/MovieList';
 import  Carousels from './components/Slider';
 import Navbar from './components/Navbar';
-import MovieDetails from './components/Moviedetails';
 
 
 function App() {
